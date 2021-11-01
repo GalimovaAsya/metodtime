@@ -7,20 +7,19 @@ namespace metodtimeTest
     {
         //1
         #region GetFormulaResultTest
-        [TestCase(-6, 7, -1, 461)]
-        [TestCase(0, 8, 0)]
+        [TestCase(-6, 0, -5)]
+        [TestCase(0, 8, 8)]
         [TestCase(3, 6, 17)]
-        [TestCase(2, -4, 1)]
-        public void GetFormulaResultTest(double a, double b, int expected)
+        [TestCase(2, -4, -4.333)]
+        public void GetFormulaResultTest(double a, double b, double expected)
         {
             double actual = VariablesHomework.GetformulaResult(a, b);
             Assert.AreEqual(expected, actual, 0.001);
         }
         [TestCase(5, 5)]
         [TestCase(-9, -9)]
-        public void GetFormulaResultTest_WhenOneOfDoubleIsEqualAnotherDouble_ShouldArgumentException(double a, double b)
+        public void GetFormulaResultTest_WhenOneOfDoubleIsEqualAnotherDouble_ShouldThrousArgumentException(double a, double b)
         {
-            double actual = VariablesHomework.GetformulaResult(a, b);
             Assert.Throws<ArgumentException>(() => VariablesHomework.GetformulaResult(a, b));
         }
         #endregion

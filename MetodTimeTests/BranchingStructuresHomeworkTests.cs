@@ -32,7 +32,6 @@ namespace metodtimeTest
         [TestCase(0, 0)]
         public void FindQuarterTest_WhenPointIsAtTheOrigin_ShouldArgumentException(double x, double y)
         {
-            double actual = VariablesHomework.GetformulaResult(x, y);
             Assert.Throws<ArgumentException>(() => BranchingStructuresHomework.FindQuarter(x, y));
         }
         [TestCase(0, 5)]

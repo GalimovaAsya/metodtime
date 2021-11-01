@@ -3,9 +3,9 @@ namespace MetodTime
 {
     public class CyclesHomework
     {
-        //1
+        //1 возвести a в степень b
         #region ElevateAToB
-        public static double ElevateAToB(double a, double b)//возвести a в степень b
+        public static double ElevateAToB(double a, double b)
         {
             double x = 1;
             for (int i = 0; i < b; i++)
@@ -15,9 +15,9 @@ namespace MetodTime
             return x;
         }
         #endregion
-        //2
+        //2 получить делители а
         #region GetDividersA
-        public static int[] GetDividersA(int a)//получить делители а
+        public static int[] GetDividersA(int a)
         {
             int[] result = new int[1000 / a];
             for (int i = a; i <= 1000; i += a)
@@ -30,9 +30,9 @@ namespace MetodTime
             return result;
         }
         #endregion
-        //3
+        //3 найти количество чисел квадрат которых меньше а
         #region GetNumbersOfSquareLessA
-        public static int GetNumbersOfSquareLessA(int a)//найти количество чисел квадрат которых меньше а
+        public static int GetNumbersOfSquareLessA(int a)
         {
             int b = 0;
             for (int i = 1; i < a / 2; i++)
@@ -45,9 +45,9 @@ namespace MetodTime
             return b;
         }
         #endregion
-        //4
+        //4 получить наибольший делитель
         #region GetGreatestDivisor
-        public static int GetGreatestDivisor(int a)//получить наибольший делитель
+        public static int GetGreatestDivisor(int a)
         {
             for (int i = a - 1; i < a; i--)
             {
@@ -59,9 +59,9 @@ namespace MetodTime
             return -1;
         }
         #endregion
-        //5
+        //5 получить сумму чисел делящихся на 7
         #region GetSumNumbersDivibleBySeven
-        public static int GetSumNumbersDivibleBySeven(int a, int b)//получить сумму чисел делящихся на 7
+        public static int GetSumNumbersDivibleBySeven(int a, int b)
         {
             int n = 0;
             if (a < b)
@@ -87,9 +87,9 @@ namespace MetodTime
             return n;
         }
         #endregion
-        //6
+        //6 ряд фибоначи
         #region GetFibonachchi
-        public static int GetFibonachchi(int number)//ряд фибоначи
+        public static int GetFibonachchi(int number)
         {
             int pervoe = 1;
             int vtoroe = 0;
@@ -103,9 +103,9 @@ namespace MetodTime
             return pervoe;
         }
         #endregion
-        //7
+        //7 наибольший общий делитель евклида
         #region GetGreatesDevidersEvklid
-        public static int GetGreatesDevidersEvklid(int one, int two)//наибольший общий делитель евклида
+        public static int GetGreatesDevidersEvklid(int one, int two)
         {
             while (one != two)
             {
@@ -121,9 +121,9 @@ namespace MetodTime
             return one;
         }
         #endregion
-        //8
+        //8 найти н методом половинного делелния
         #region RecieveNByMethodOfHalfDivision
-        public static int RecieveNByMethodOfHalfDivision(int a)//найти н методом половинного делелния
+        public static int RecieveNByMethodOfHalfDivision(int a)
         {
             int left = 1;
             int right = a;
@@ -144,9 +144,9 @@ namespace MetodTime
             return n;
         }
         #endregion
-        //9
+        //9 найти количество нечетных цифр
         #region FindNumbersOfOddDigits
-        public static int FindNumbersOfOddDigits(int a)//найти количество нечетных цифр
+        public static int FindNumbersOfOddDigits(int a)
         {
             int w = 0;
             while (a != 0)
@@ -162,9 +162,9 @@ namespace MetodTime
             return w;
         }
         #endregion
-        //10
+        //10 найти зеркальное число
         #region FindMirrorNumber
-        public static int FindMirrorNumber(int a)//найти зеркальное число
+        public static int FindMirrorNumber(int a)
         {
             int w = 0;
             while (a != 0)
@@ -175,9 +175,9 @@ namespace MetodTime
             return w;
         }
         #endregion
-        //11
+        //11 сумма четных больше суммы нечетных
         #region GetSummOfEvenIsGreaterThanSummOfOdd
-        public static string GetSummOfEvenIsGreaterThanSummOfOdd(int n)//сумма четных больше суммы нечетных
+        public static string GetSummOfEvenIsGreaterThanSummOfOdd(int n)
         {
             int chet = 0;
             int nechet = 0;
@@ -204,9 +204,9 @@ namespace MetodTime
             }
         }
         #endregion
-        //12
+        //12 есть ли одинаковые цифры
         #region IsThereTheSameNumbers
-        public static bool IsThereTheSameNumbers(int a, int b)//есть ли одинаковые цифры
+        public static bool IsThereTheSameNumbers(int a, int b)
         {
             bool proverka = false;
             while (a != 0)

@@ -3,9 +3,9 @@ namespace MetodTime
 {
     public class BranchingStructuresHomework
     {
-        //1
+        //1 посчитать по условиям
         #region CountByConditions
-        public static double CountByConditions(double a, double b)//посчитать по условиям
+        public static double CountByConditions(double a, double b)
         {
             double result = 0;
             if (a > b)
@@ -26,7 +26,7 @@ namespace MetodTime
             return result;
         }
         #endregion
-        //2
+        //2 найти четверть
         /// <summary>
         /// error exception
         /// </summary>
@@ -34,7 +34,7 @@ namespace MetodTime
         /// <param name="y"></param>
         /// <returns></returns>
         #region FindQuarter
-        public static int FindQuarter(double x, double y)//найти четверть
+        public static int FindQuarter(double x, double y)
         {
             int quarter = 0;
             if (x > 0 && y > 0)
@@ -67,9 +67,9 @@ namespace MetodTime
             return quarter;
         }
         #endregion
-        //3
+        //3 получить порядок по возрастанию
         #region GetAscendingOrder
-        public static int[] GetAscendingOrder(int a, int b, int c)//получить порядок по возрастанию
+        public static int[] GetAscendingOrder(int a, int b, int c)
         {
             int[] order = new int[3];
             if (a < b)
@@ -109,9 +109,9 @@ namespace MetodTime
             return order;
         }
         #endregion
-        //4
+        //4 решить квадратное уравнение
         #region SolveQuadraticEquation
-        public static double[] SolveQuadraticEquation(double a, double b, double c)//решить квадратное уравнение
+        public static double[] SolveQuadraticEquation(double a, double b, double c)
         {
             double diskriminant = b * b - 4 * a * c;
             double x = 0;
@@ -140,9 +140,9 @@ namespace MetodTime
             }
         }
         #endregion
-        //5
+        //5 получть надпись
         #region GetAnInscription
-        public static string GetAnInscription(int a)//получть надпись
+        public static string GetAnInscription(int a)
         {
             int q = a / 10;
             int w = a % 10;

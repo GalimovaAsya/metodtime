@@ -3,9 +3,9 @@ namespace MetodTime
 {
     public class ArrayHomework
     {
-        //1
+        //1 найти минимальный элемент массива
         #region GetMinimumElementOfArray
-        public static int GetMinimumElementOfArray(int[] array)//найти минимальный элемент массива
+        public static int GetMinimumElementOfArray(int[] array)
         {
             int min = array[0];
             for (int i = 0; i < array.Length; i++)//1
@@ -18,9 +18,9 @@ namespace MetodTime
             return min;
         }
         #endregion
-        //2
+        //2 найти максимальный элемент массива
         #region GetMaximumElementOfArray
-        public static int GetMaximumElementOfArray(int[] array)//найти максимальный элемент массива
+        public static int GetMaximumElementOfArray(int[] array)
         {
             int max = array[0];
             for (int i = 0; i < array.Length; i++)
@@ -33,9 +33,9 @@ namespace MetodTime
             return max;
         }
         #endregion
-        //3
+        //3 найти индекс минимального элемента массива
         #region GetIndexMinimumElementOfArray
-        public static int GetIndexMinimumElementOfArray(int[] array)//найти индекс минимального элемента массива
+        public static int GetIndexMinimumElementOfArray(int[] array)
         {
             int min = array[0];
             int indexmin = 0;
@@ -50,9 +50,9 @@ namespace MetodTime
             return indexmin;
         }
         #endregion
-        //4
+        //4 найти индекс максимального элемента массива
         #region GetIndexMaximumElementOfArray
-        public static int GetIndexMaximumElementOfArray(int[] array)//найти индекс максимального элемента массива
+        public static int GetIndexMaximumElementOfArray(int[] array)
         {
             int max = array[0];
             int indexmax = 0;
@@ -67,9 +67,9 @@ namespace MetodTime
             return indexmax;
         }
         #endregion
-        //5
+        //5 посчитать сумму элементов массива с нечетными индексами
         #region CalcSumOddIndexOfArray
-        public static int CalcSumOddIndexOfArray(int[] array)//посчитать сумму элементов массива с нечетными индексами
+        public static int CalcSumOddIndexOfArray(int[] array)
         {
             int sum = 0;
             for (int i = 0; i < array.Length; i++)
@@ -82,9 +82,9 @@ namespace MetodTime
             return sum;
         }
         #endregion
-        //6
+        //6 реверс
         #region ReverseArray
-        public static int[] ReverseArray(int[] array)//реверс
+        public static int[] ReverseArray(int[] array)
         {
             int max = array[0];
             int tmp = 0;
@@ -104,9 +104,9 @@ namespace MetodTime
             return array;
         }
         #endregion
-        //7
+        //7 посчитать количество нечетных элементов массива
         #region CountNumberOfOddElementsInArray
-        public static int CountNumberOfOddElementsInArray(int[] array)//посчитать количество нечетных элементов массива
+        public static int CountNumberOfOddElementsInArray(int[] array)
         {
             int kolich = 0;
             for (int i = 0; i < array.Length; i++)
@@ -119,9 +119,9 @@ namespace MetodTime
             return kolich;
         }
         #endregion
-        //8
+        //8 поменять местами первую и вторую половину массива
         #region SwapHalfOfArray
-        public static int[] SwapHalfOfArray(int[] array)//поменять местами первую и вторую половину массива
+        public static int[] SwapHalfOfArray(int[] array)
         {
             int k = array.Length % 2;
             for (int i = 0; i < array.Length / 2; i++)
@@ -136,9 +136,9 @@ namespace MetodTime
             return array;
         }
         #endregion
-        //9
+        //9 отсортировать массив по возрастанию
         #region SortTheArrayInAscendingOrder
-        public static int[] SortTheArrayInAscendingOrder(int[] array)//отсортировать массив по возрастанию
+        public static int[] SortTheArrayInAscendingOrder(int[] array)
         {
             int tmp = 0;
             for (int i = 0; i < array.Length - 1; i++)
@@ -160,9 +160,9 @@ namespace MetodTime
             return array;
         }
         #endregion
-        //10
+        //10 отсортировать массив по убыванию
         #region SortTheArrayInDescendingOrder
-        public static int[] SortTheArrayInDescendingOrder(int[] array)//отсортировать массив по убыванию
+        public static int[] SortTheArrayInDescendingOrder(int[] array)
         {
             int tmp = 0;
             for (int i = 0; i < array.Length; i++)

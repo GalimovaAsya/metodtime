@@ -79,7 +79,7 @@ namespace metodtimeTest
         #region RecieveNByMethodOfHalfDivisionTest
         [TestCase(125, 5)]
         [TestCase(8, 2)]
-        [TestCase(636065, 86)]
+        [TestCase(636056, 86)]
         public void RecieveNByMethodOfHalfDivisionTest(int a, int expected)
         {
             int actual = CyclesHomework.RecieveNByMethodOfHalfDivision(a);

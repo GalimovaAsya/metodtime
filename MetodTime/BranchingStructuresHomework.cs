@@ -27,13 +27,13 @@ namespace MetodTime
         }
         #endregion
         //2 найти четверть
+        #region FindQuarter
         /// <summary>
-        /// error exception
+        /// exception
         /// </summary>
         /// <param name="x"></param>
         /// <param name="y"></param>
         /// <returns></returns>
-        #region FindQuarter
         public static int FindQuarter(double x, double y)
         {
             int quarter = 0;
@@ -142,6 +142,11 @@ namespace MetodTime
         #endregion
         //5 получть надпись
         #region GetAnInscription
+        /// <summary>
+        /// exception
+        /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
         public static string GetAnInscription(int a)
         {
             int q = a / 10;
@@ -244,7 +249,10 @@ namespace MetodTime
                         break;
                 }
             }
-
+            if (a < 10 || a > 99)
+            {
+                throw new IndexOutOfRangeException("int a is out of range");
+            }
             return $"{s}";
         }
         #endregion

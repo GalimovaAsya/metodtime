@@ -75,10 +75,20 @@ namespace metodtimeTest
         [TestCase(80, "восемьдесят ")]
         [TestCase(91, "девяносто один")]
         [TestCase(29, "двадцать девять")]
+        [TestCase(10, "десять")]
+        [TestCase(99, "девяносто девять")]
         public void GetAnInscriptionTest(int a, string expected)
         {
             string actual = BranchingStructuresHomework.GetAnInscription(a);
             Assert.AreEqual(expected, actual);
+        }
+        [TestCase(9)]
+        [TestCase(0)]
+        [TestCase(100)]
+        [TestCase(9075)]
+        public void GetAnInscriptionTest_WhenIntAIsOutOfRange_ShouldThrowsIndexOutOfRangeException(int a)
+        {
+            Assert.Throws<IndexOutOfRangeException>(() => BranchingStructuresHomework.GetAnInscription(a));
         }
         #endregion
     }

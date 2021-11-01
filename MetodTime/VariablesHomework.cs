@@ -4,13 +4,13 @@ namespace MetodTime
     public class VariablesHomework
     {
         //1
+        #region GetformulaResult
         /// <summary>
-        /// error a!=b
+        /// a!=b
         /// </summary>
         /// <param name = "a" ></ param >
         /// < param name="b"></param>
         /// <returns></returns>
-        #region GetformulaResult
         public static double GetformulaResult(double a, double b)
         {
             double result = ((a * 5) + (b * b)) / (b - a);

@@ -83,7 +83,7 @@ namespace MetodTime
                     order = new int[] { a, c, b };
                 }
             }
-            if (c < a)
+            else if (c < a)
             {
                 if (a < b)
                 {
@@ -94,7 +94,7 @@ namespace MetodTime
                     order = new int[] { c, b, a };
                 }
             }
-            if (b < a)
+            else if (b < a)
             {
                 if (a < c)
                 {

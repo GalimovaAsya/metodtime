@@ -17,13 +17,13 @@ namespace MetodTime
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    if (array[i, j] < min)
-                    {
-                        min = array[i, j];
-                    }
                     if (array.GetLength(0) == 0 || array.GetLength(1) == 0)
                     {
                         throw new IndexOutOfRangeException("array is empty");
+                    }
+                    if (array[i, j] < min)
+                    {
+                        min = array[i, j];
                     }
                 }
             }
@@ -44,13 +44,13 @@ namespace MetodTime
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    if (array[i, j] > max)
-                    {
-                        max = array[i, j];
-                    }
                     if (array.GetLength(0) == 0 || array.GetLength(1) == 0)
                     {
                         throw new IndexOutOfRangeException("array is empty");
+                    }
+                    if (array[i, j] > max)
+                    {
+                        max = array[i, j];
                     }
                 }
             }
@@ -72,15 +72,15 @@ namespace MetodTime
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
+                    if (array.GetLength(0) == 0 || array.GetLength(1) == 0)
+                    {
+                        throw new IndexOutOfRangeException("array is empty");
+                    }
                     if (array[i, j] < min)
                     {
                         min = array[i, j];
                         indexmin[0] = i;
                         indexmin[1] = j;
-                    }
-                    if (array.GetLength(0) == 0 || array.GetLength(1) == 0)
-                    {
-                        throw new IndexOutOfRangeException("array is empty");
                     }
                 }
             }
@@ -102,15 +102,15 @@ namespace MetodTime
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
+                    if (array.GetLength(0) == 0 || array.GetLength(1) == 0)
+                    {
+                        throw new IndexOutOfRangeException("array is empty");
+                    }
                     if (array[i, j] > max)
                     {
                         max = array[i, j];
                         indexmax[0] = i;
                         indexmax[1] = j;
-                    }
-                    if (array.GetLength(0) == 0 || array.GetLength(1) == 0)
-                    {
-                        throw new IndexOutOfRangeException("array is empty");
                     }
                 }
             }
@@ -126,6 +126,10 @@ namespace MetodTime
             {
                 for (int j = 0; j<array.GetLength(1); j++)
                 {
+                    if (array.GetLength(0) == 0 || array.GetLength(1) == 0)
+                    {
+                        throw new IndexOutOfRangeException("array is empty");
+                    }
                     if ((i == 0 || array[i, j] > array[i - 1, j])
                         && (j == 0 || array[i, j] > array[i, j - 1])
                         && (i == array.GetLength(0) - 1 || array[i, j] > array[i + 1, j])

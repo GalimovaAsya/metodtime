@@ -106,5 +106,29 @@ namespace metodtimeTest
             Assert.Throws<IndexOutOfRangeException>(() => DvumernyyArrayHomework.GetIndexMaximumElementOfDvumeryyArray(array));
         }
         #endregion
+        //5
+        #region
+        [TestCase("Usual1", 0)]
+        [TestCase("Usual2", 1)]
+        [TestCase("Usual3", 2)]
+        public void GetNumberElementsMoreThanNeighborsOfArrayTest(string arrayType, int expected)
+        {
+            int[,] array = GetDvumeryyArrayMock(arrayType);
+            int actual = DvumernyyArrayHomework.GetNumberElementsMoreThanNeighborsOfArray(array);
+            Assert.AreEqual(expected, actual);
+        }
+        [TestCase("Empty")]
+        public void GetNumberElementsMoreThanNeighborsOfArrayTest_WhenArrayIsEmpty_ShouldThrowsArgumentException(string arrayType)
+        {
+            int[,] array = GetDvumeryyArrayMock(arrayType);
+            Assert.Throws<IndexOutOfRangeException>(() => DvumernyyArrayHomework.GetNumberElementsMoreThanNeighborsOfArray(array));
+        }
+        //тут будет тест
+        #endregion
+        //6
+        #region
+        //и тут тоже он будет
+        #endregion
+       
     }
 }

@@ -121,6 +121,7 @@ namespace metodtimeTest
         #region IsThereTheSameNumbersTest
         [TestCase(1234, 5437876, true)]
         [TestCase(123, 999978, false)]
+        [TestCase(112, 33133, true)]
         public void IsThereTheSameNumbersTest(int a, int b, bool expected)
         {
             bool actual = CyclesHomework.IsThereTheSameNumbers(a, b);

@@ -74,7 +74,7 @@ namespace MetodTime
                     }
                 }
             }
-            if (a > b)
+            else if (b < a)
             {
                 for (int i = b; i < a; i++)
                 {
@@ -220,8 +220,8 @@ namespace MetodTime
                         proverka = true;
                     }
                     b /= 10;
+                    a /= 10;
                 }
-                a /= 10;
             }
             return proverka;
         }

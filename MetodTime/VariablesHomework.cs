@@ -6,18 +6,18 @@ namespace MetodTime
         //1
         #region GetformulaResult
         /// <summary>
-        /// a!=b
+        /// divizion by zero
         /// </summary>
         /// <param name = "a" ></ param >
         /// < param name="b"></param>
         /// <returns></returns>
         public static double GetformulaResult(double a, double b)
         {
-            double result = ((a * 5) + (b * b)) / (b - a);
             if (a == b)
             {
                 throw new ArgumentException("double a should not be equal to double b");
             }
+            double result = ((a * 5) + (b * b)) / (b - a);
             return result;
         }
         #endregion
